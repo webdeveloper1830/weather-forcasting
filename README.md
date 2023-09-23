@@ -20,3 +20,11 @@ Go to (http://127.0.0.1:8000/register) and register your account with any email 
 Go to dashboard (http://127.0.0.1:8000/dashboard) and select any city.
 
 and you will see the forcast of next couple of hours.
+
+
+## What we can do if we spend more time on it
+
+- write the test cases for livewire component.
+- improve the UI and group by date 
+- loader we can implement on change event
+- make seprate class for api if we knows we will use at many places.

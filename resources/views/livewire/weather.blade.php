@@ -18,7 +18,7 @@
     </div>
     @else
         @if ($currentWeather)
-            <div class="max-w-md p-8 mx-auto rounded-lg dark:bg-gray-900 dark:text-gray-100">
+            <div class="p-8 mx-auto rounded-lg dark:bg-gray-900 dark:text-gray-100">
                 <div class="flex justify-between space-x-8">
                     <div class="flex flex-col items-center">
                         <img src="https://openweathermap.org/img/wn/{{$currentWeather['weather'][0]['icon']}}.png" alt="">

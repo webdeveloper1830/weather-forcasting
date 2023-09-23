@@ -14,7 +14,7 @@ class Helper
     {
         if($time)
         {
-            return  \Carbon\Carbon::createFromTimestamp($time)->format('h:m a');
+            return  \Carbon\Carbon::createFromTimestamp($time)->format('D h:m a');
         }
     }
 }

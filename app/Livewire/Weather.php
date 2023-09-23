@@ -12,7 +12,6 @@ class Weather extends Component
     /** @var string */
     public $city;
 
-
     /** @var bool  */
     public bool $isLoading = false;
 
@@ -31,12 +30,12 @@ class Weather extends Component
         $this->isLoading = true;
 
         $api_key = config('services.openweathermap.key');
-        $count = 5;
+        $count = 16;
 
         $currentWeather = Http::get("https://api.openweathermap.org/data/2.5/weather?q={$this->city}&appid={$api_key}&units=metric");
-
         $futureWeather = Http::get("https://api.openweathermap.org/data/2.5/forecast?q={$this->city}&cnt={$count}&appid={$api_key}");
 
+        
 
         $this->currentWeather = $currentWeather->json();
         $this->futureWeather = $futureWeather->json();
